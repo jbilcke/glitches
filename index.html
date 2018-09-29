@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+      @font-face {
+     font-family: 'Clip';
+     src: url('fonts/Clip.woff2') format('woff2'), url('fonts/Clip.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'Neon';
+     src: url('fonts/Neon.woff2') format('woff2'), url('fonts/Neon.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'HELLO DENVER DISPLAY';
+     src: url('fonts/HELLODENVERDISPLAYREGULAR-Regular.woff2') format('woff2'), url('fonts/HELLODENVERDISPLAYREGULAR-Regular.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'HELLO DENVER DISPLAY BOLD';
+     src: url('fonts/HELLODENVERDISPLAYBOLD-Bold.woff2') format('woff2'), url('fonts/HELLODENVERDISPLAYBOLD-Bold.woff') format('woff');
+     font-weight: bold;
+     font-style: normal;
+}
+ @font-face {
+     font-family: 'LostWages';
+     src: url('fonts/LostWages.woff2') format('woff2'), url('fonts/LostWages.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+ * {
+     box-sizing: border-box;
+}
+ html {
+     height: 100%;
+}
+ body {
+     background-color: rgb(0, 0, 4);
+     margin: 0px;
+     height: 100%;
+     color:rgb(178, 170, 171);
+     font-family: 'LostWages';
+     text-transform: uppercase;
+     overflow: hidden;
+}
+ .monochrome {
+     filter: grayscale(100%) contrast(160%);
+}
+ .glitches {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     opacity: 0.6;
+}
+ .video {
+    /* Make video to at least 100% wide and tall */
+     min-width: 100%;
+     min-height: 100%;
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+     width: auto;
+     height: auto;
+    /* Center the video */
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+}
+ .column {
+     white-space: initial;
+     width: 10vh;
+     word-break: break-all;
+     text-align: center;
+}
+ .font1 {
+     font-family: 'LostWages';
+     font-size: 15vh;
+     line-height: 16vh;
+     text-shadow: 0px 0px 4px rgba(254, 222, 224, 0.7);
+}
+ .font2 {
+     font-family: 'Clip';
+     font-size: 14vh;
+     line-height: 15vh;
+     text-shadow: 0px 0px 5px rgba(254, 224, 222, 0.7);
+}
+ .font3 {
+     font-family: 'HELLO DENVER DISPLAY';
+    /* 'Neon';
+     */
+     font-size: 18vh;
+     line-height: 19vh;
+     text-shadow: 0px 1px 6px rgba(250, 225, 225, 0.7);
+}
+ .font4 {
+     font-family: 'HELLO DENVER DISPLAY';
+     font-size: 20vh;
+     line-height: 22vh;
+     text-shadow: 0px 0px 5px rgba(234, 202, 204, 0.8);
+}
+ .loop1{
+     position: fixed;
+     animation: animLoop1 linear 32s infinite;
+     transform-origin: 50% 50%;
+}
+ @keyframes animLoop1{
+     0% {
+         transform: translate(20vw, -10vh) rotateX(1deg);
+    }
+     10% {
+         transform: translate(20vw, 10vh) rotateX(0deg) ;
+    }
+     85% {
+         transform: translate(20vw, 100vh) rotateX(-1deg);
+    }
+     90% {
+         transform: translate(20vw, 120vh) rotateX(0deg);
+    }
+     95% {
+         transform: translate(-50vw, 120vh) rotateX(2deg);
+    }
+     100% {
+         transform: translate(-50vw, -50vh) rotateX(1deg);
+    }
+}
+ .loop2{
+     position: fixed;
+     animation: animLoop2 linear 30s infinite;
+     transform-origin: 50% 50%;
+}
+ @keyframes animLoop2{
+     0% {
+         transform: translate(-20vw, -20vh) rotate(45deg);
+    }
+     10% {
+         transform: translate(0vw, 0vh) rotate(45deg);
+    }
+     50% {
+         transform: translate(45vw, 55vh) rotate(45deg);
+    }
+     85% {
+         transform: translate(100vw, 100vh) rotate(45deg);
+    }
+     90% {
+         transform: translate(120vw, 120vh) rotate(45deg);
+    }
+     95% {
+         transform: translate(-50vw, 120vh) rotate(45deg);
+    }
+     100% {
+         transform: translate(-50vw, -50vh) rotate(45deg);
+    }
+}
+ .loop3{
+     position: fixed;
+     animation: animLoop3 linear 28s infinite;
+     transform-origin: 50% 50%;
+}
+ @keyframes animLoop3{
+     0% {
+         transform: translate(-20vw, 40vh) rotateZ(1deg);
+    }
+     10% {
+         transform: translate(5vw, 40vh) rotateZ(0deg) ;
+    }
+     90% {
+         transform: translate(100vw, 42vh, 1vh) rotateZ(0deg);
+    }
+     95% {
+         transform: translate(150vw, -42vh) rotateZ(2deg);
+    }
+     95% {
+         transform: translate(150vw, -100vh) rotateZ(2deg);
+    }
+     100% {
+         transform: translate(-20vw, -100vh) rotateZ(1deg);
+    }
+}
+ .loop4{
+     position: fixed;
+     animation: animLoop4 linear 28s infinite;
+     transform-origin: 50% 50%;
+}
+ @keyframes animLoop4{
+     0% {
+         transform: translate(-20vw, 40vh) rotateZ(1deg);
+    }
+     10% {
+         transform: translate(5vw, 40vh) rotateZ(0deg) ;
+    }
+     90% {
+         transform: translate(100vw, 40vh) rotateZ(0deg);
+    }
+     95% {
+         transform: translate(150vw, 40vh) rotateZ(2deg);
+    }
+     96% {
+         transform: translate(150vw, -100vh) rotateZ(2deg);
+    }
+     100% {
+         transform: translate(-150vw, -100vh) rotateZ(1deg);
+    }
+}
+/* brutally shake the element without smoothing, as we want to emulate defaults between frames */
+ .corrupt {
+     animation: keyframesCorrupt 2s cubic-bezier(.36,.07,.19,.97) infinite;
+     transform: translate3d(0, 0, 0);
+     backface-visibility: hidden;
+     perspective: 1000px;
+}
+ @keyframes keyframesCorrupt {
+     10%, 55%, 75%, 90% {
+         transform: translate3d(-1px, 0, 0);
+         opacity: 1.0;
+    }
+     5%, 20%, 50%, 80% {
+         transform: translate3d(2px, -1px, 0);
+         opacity: 1.0;
+    }
+     15%, 25%, 70%, 82% {
+         transform: translate3d(1px, 1px, 2px);
+         opacity: 1.0;
+    }
+     30%, 58% {
+         transform: translate3d(-3px, 1px, 1px);
+         opacity: 0.8;
+    }
+     72% {
+         transform: translate3d(-3px, 1px, 1px);
+         opacity: 0.7;
+    }
+     40%, 45%, 60% {
+         transform: translate3d(4px, 0, -1px);
+         opacity: 1.0;
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='glitches'>
+        <video class='video' autoplay muted loop>
+          <source src="glitches.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class='corrupt'>
+        <div class='loop1'>
+          <div class='font2 column monochrome'>p r o g r a m m e</div>
+        </div>
+        <div class='loop2'>
+          <div class='font3 column monochrome'>f u t u r</div>
+        </div>
+        <div class='loop4'>
+          <div class='font2 monochrome'>modernite</div>
+        </div>
+        <div class='loop3'>
+          <div class='font3 column monochrome'>&nbsp; m a c h i n e</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

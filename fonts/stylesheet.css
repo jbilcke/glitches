@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Clip';
+    src: url('Clip.woff2') format('woff2'),
+        url('Clip.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neon';
+    src: url('Neon.woff2') format('woff2'),
+        url('Neon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HELLO DENVER DISPLAY';
+    src: url('HELLODENVERDISPLAYREGULAR-Regular.woff2') format('woff2'),
+        url('HELLODENVERDISPLAYREGULAR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HELLO DENVER DISPLAY BOLD';
+    src: url('HELLODENVERDISPLAYBOLD-Bold.woff2') format('woff2'),
+        url('HELLODENVERDISPLAYBOLD-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LostWages';
+    src: url('LostWages.woff2') format('woff2'),
+        url('LostWages.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
